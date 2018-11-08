@@ -6,7 +6,9 @@
             <div class="col-md-12">
                 <h1>{{ auth()->user()->id == $user->id ? 'My Profile' : $user->name}}</h1>
 
-                <img class="card-img-top img-responsive" src="{{asset('images')}}/person{{$user->id}}.jpeg" alt="">
+
+                    <img  class="card-img-top img-responsive" src="{{asset('images')}}/person{{$user->id}}.jpeg" alt="">
+
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
 

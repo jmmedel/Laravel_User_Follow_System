@@ -38,4 +38,5 @@ class HomeController extends Controller
         $response = auth()->user()->toggleFollow($user);
         return response()->json(['success'=> $response]);
     }
+    
 }
